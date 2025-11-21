@@ -1,10 +1,11 @@
 import React from 'react'
 import { SiFsecure } from "react-icons/si";
 import {Link} from 'react-router-dom'
+import Cards from '../ui/Cards';
 
 const Home = () => {
   return (
-    <div className=' w-full h-[100vh] bg-gray-950 text-white flex flex-col  justify-center items-center '>
+    <div className=' w-full h-auto bg-gray-950 text-white flex flex-col  justify-center items-center '>
       <SiFsecure className='text-[80px] text-green-500 m-[30px]' />
      <p className="text-[80px] font-medium text-shadow-yellow text-cyan-600 p-[30px] leading-2">
             Web Trust
@@ -16,6 +17,8 @@ const Home = () => {
     <button className='w-[200px] h-[60px] anton-regular bg-green-900  rounded-2xl hover:bg-green-700'>
     <Link to='/Test'>SCAN NOW</Link>
     </button>
+   
+    <Cards/>
  
 
     </div>
